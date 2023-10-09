@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dialog_bg"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:indeterminateTint="@color/primary"
+            android:padding="140dp"
+            android:translationZ="100dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:id="@+id/successView"
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_success" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="SUCCESS"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="22dp"
+                    app:fontFamily="@font/poppins_semi_bold" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remember, you can always   "
+                        android:textColor="@android:color/black"
+                        android:textSize="14dp"
+                        app:fontFamily="@font/poppins_regular"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ic_rocket"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/ic_rocket"
+                        app:layout_constraintBottom_toBottomOf="@id/tv1"
+                        app:layout_constraintLeft_toRightOf="@id/tv1"
+                        app:layout_constraintTop_toTopOf="@id/tv1" />
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  Boost"
+                        android:textColor="@color/primary"
+                        android:textSize="14dp"
+                        app:fontFamily="@font/poppins_regular"
+                        app:layout_constraintBottom_toBottomOf="@id/ic_rocket"
+                        app:layout_constraintLeft_toRightOf="@id/ic_rocket"
+                        app:layout_constraintTop_toTopOf="@id/ic_rocket" />
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" your"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        app:fontFamily="@font/poppins_regular"
+                        app:layout_constraintBottom_toBottomOf="@id/tv2"
+                        app:layout_constraintLeft_toRightOf="@id/tv2"
+                        app:layout_constraintTop_toTopOf="@id/tv2" />
+
+                    <TextView
+                        android:id="@+id/tv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:gravity="center"
+                        android:text="business in your store profile to gain more\nmomentum"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        app:fontFamily="@font/poppins_regular"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv3" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/closeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="CLOSE"
+                android:textColor="@color/primary"
+                android:textSize="16dp"
+                app:fontFamily="@font/poppins_bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="How long is your offer?"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        app:fontFamily="@font/poppins_semi_bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/one_day"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="70dp"
+                            android:layout_height="34dp"
+                            android:background="@drawable/days_btn__false_bg"
+                            android:text="1 day"
+                            android:textAllCaps="false"
+                            android:textColor="@color/primary"
+                            android:textSize="16dp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/two_day"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="70dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/days_btn__false_bg"
+                            android:text="2 day"
+                            android:textAllCaps="false"
+                            android:textColor="@color/primary"
+                            android:textSize="16dp" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/three_day"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="70dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/days_btn__true_bg"
+                            android:text="3 day"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="How many claimers?"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        app:fontFamily="@font/poppins_semi_bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/minus_btn"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="53dp"
+                            android:layout_height="34dp"
+                            android:background="@drawable/report_corner_bg_selected"
+                            android:padding="3dp"
+                            android:src="@drawable/ic_minus" />
+
+                        <EditText
+                            android:id="@+id/required_count_et"
+                            android:layout_width="70dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/report_corner_bg"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:text="0"
+                            android:textColor="@color/primary"
+                            android:textSize="16dp" />
+
+                        <ImageView
+                            android:id="@+id/plus_btn"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="53dp"
+                            android:layout_height="34dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/report_corner_bg_selected"
+                            android:padding="3dp"
+                            android:src="@drawable/ic_plus" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Promo code "
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            app:fontFamily="@font/poppins_semi_bold" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/promo_code_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/add_item_bg"
+                            android:hint="Type your promo code here"
+                            android:inputType="text"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@color/av_gray"
+                            android:textSize="14dp"
+                            app:fontFamily="@font/poppins_regular" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Percentage"
+                            android:textColor="@android:color/black"
+                            android:textSize="16dp"
+                            app:fontFamily="@font/poppins_semi_bold" />
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/percent_et"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/add_item_bg"
+                            android:hint="%"
+                            android:inputType="number"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@color/av_gray"
+                            android:textSize="14dp"
+                            app:fontFamily="@font/poppins_regular" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Specify for what exactly?"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp"
+                    app:fontFamily="@font/poppins_semi_bold" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/description_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/add_item_bg"
+                    android:hint="Promo for the whole store or specific items only?"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@color/av_gray"
+                    android:textSize="14dp"
+                    app:fontFamily="@font/poppins_regular" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/addCloseBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_close_gray" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/saveBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/primary_btn_bg"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

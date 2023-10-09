@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "393731850609",
+    "project_id": "heylinko",
+    "storage_bucket": "heylinko.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393731850609:android:be15dcba0ac5e6629bf6d0",
+        "android_client_info": {
+          "package_name": "com.neb.linko"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393731850609-q171pgs38o7va79692gr5b9odg1ig47m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.neb.linko",
+            "certificate_hash": "d4922aa3cf4a399932094bc04c736746665fb715"
+          }
+        },
+        {
+          "client_id": "393731850609-s70jjrgc5tdjles65eupqibe6di8polc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2BGHRtcEB9tuQQeWFSk1RrxRKeEVHkhc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "393731850609-s70jjrgc5tdjles65eupqibe6di8polc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "393731850609-rh7hdplp9n4kca07td4coejdofflevpn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.linko.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".businessUi.businessProfile.BusinessProfileFragment">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8BFFFFFF"
+        android:indeterminateTint="@color/primary"
+        android:padding="140dp"
+        android:translationZ="100dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Business account"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/back_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/back_btn" />
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <ImageView
+        android:id="@+id/logout_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_logout"
+        app:layout_constraintBottom_toBottomOf="@id/title"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/title" />
+
+    <LinearLayout
+        android:id="@+id/circle_for_img"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:background="@drawable/primary_circle"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <ImageView
+        android:id="@+id/edit_btn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/ic_edit"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="@id/circle_for_img"
+        app:layout_constraintRight_toRightOf="@id/circle_for_img" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardBackgroundColor="@color/analytics_gray"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/circle_for_img"
+        app:layout_constraintLeft_toLeftOf="@id/circle_for_img"
+        app:layout_constraintRight_toRightOf="@id/circle_for_img"
+        app:layout_constraintTop_toTopOf="@id/circle_for_img">
+
+        <ImageView
+            android:id="@+id/main_image"
+            android:layout_width="99dp"
+            android:layout_height="102dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_user" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:text="Hi Guest!"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@id/top_c"
+        app:layout_constraintLeft_toLeftOf="@id/circle_for_img"
+        app:layout_constraintRight_toRightOf="@id/circle_for_img"
+        app:layout_constraintTop_toBottomOf="@id/circle_for_img"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/details_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintLeft_toLeftOf="@id/name_text"
+        app:layout_constraintRight_toRightOf="@id/name_text"
+        app:layout_constraintTop_toBottomOf="@id/name_text" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/profile_dialog_bg"
+        android:paddingVertical="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/details_text">
+
+        <LinearLayout
+            android:id="@+id/analytics_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_analitics" />
+
+            <TextView
+                android:id="@+id/analytics_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="20dp"
+                android:text="Analytics"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/store_details_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
+            app:layout_constraintTop_toBottomOf="@id/analytics_btn">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_deails" />
+
+            <TextView
+                android:id="@+id/store_details_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="20dp"
+                android:text="Store Details"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/store_photos_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/store_details_btn">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_store_photos" />
+
+            <TextView
+                android:id="@+id/store_photos_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="20dp"
+                android:text="Store photos "
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/store_items_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
+            app:layout_constraintTop_toBottomOf="@id/store_photos_btn">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_store_items" />
+
+            <TextView
+                android:id="@+id/store_items_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="20dp"
+                android:text="Store items"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/promo_codes_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
+            app:layout_constraintTop_toBottomOf="@id/store_items_btn">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_promo_code" />
+
+            <TextView
+                android:id="@+id/promo_codes_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="20dp"
+                android:text="Promo Codes"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/business_boost_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp"
+            app:layout_constraintTop_toBottomOf="@id/promo_codes_btn">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_business_boost" />
+
+            <TextView
+                android:id="@+id/business_boost_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="20dp"
+                android:text="Business Boost"
+                android:textColor="@color/primary"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_arrow" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:background="@drawable/profile_dialog_bg"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_c"
+        app:layout_constraintVertical_bias="0.8">
+
+        <LinearLayout
+            android:id="@+id/profile_add_store_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingVertical="22dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_add_store" />
+
+            <TextView
+                android:id="@+id/add_store_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="20dp"
+                android:text="Add Your Store"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="14sp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profile_business_store_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingVertical="22dp"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_business" />
+
+            <TextView
+                android:id="@+id/business_store_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="20dp"
+                android:text="Business account"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="14sp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_arrow" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

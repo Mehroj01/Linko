@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_nav_graph"
+    app:startDestination="@id/signUpFragment">
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.neb.linko.ui.registerscreens.SignUp.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_pinFragment"
+            app:destination="@id/pinFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pinFragment"
+        android:name="com.neb.linko.ui.registerscreens.pin.PinFragment"
+        android:label="fragment_pin"
+        tools:layout="@layout/fragment_pin" />
+    <fragment
+        android:id="@+id/eperienceFragment"
+        android:name="com.neb.linko.ui.registerscreens.experience.EperienceFragment"
+        android:label="fragment_eperience"
+        tools:layout="@layout/fragment_eperience" />
+</navigation>

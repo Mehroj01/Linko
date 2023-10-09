@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".businessUi.createNewStore.CreateYourStoreActivity">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8BFFFFFF"
+        android:indeterminateTint="@color/primary"
+        android:padding="140dp"
+        android:translationZ="100dp"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/create_store_success_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0FFFFFF"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:translationZ="100dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/create_store_success_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:text="Thanks"
+            android:textColor="@color/black"
+            android:textSize="39dp" />
+
+        <TextView
+            android:layout_marginHorizontal="35dp"
+            android:id="@+id/create_store_success_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/create_store_success_text_en"
+            android:textColor="#ACB1C0"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Add New Store"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <LinearLayout
+        android:id="@+id/tvs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/back_btn">
+
+        <TextView
+            android:id="@+id/add_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Add"
+            android:textColor="@color/av_gray"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/yourStoreTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Your Store"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/et_container"
+        app:layout_constraintLeft_toLeftOf="@id/tvs"
+        app:layout_constraintRight_toRightOf="@id/tvs"
+        app:layout_constraintTop_toBottomOf="@+id/tvs"
+        app:layout_constraintVertical_bias="0.8">
+
+        <RadioButton
+            android:id="@+id/radio_claim"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:buttonTint="@color/primary"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:text="Claim existing store"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <RadioButton
+            android:id="@+id/radio_create"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:buttonTint="@color/primary"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:text="Create new store"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/et_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6">
+
+        <EditText
+            android:id="@+id/store_link_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/create_store_et_bg"
+            android:hint="Add your store link"
+            android:inputType="text"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/et_color"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/instagram_account_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/create_store_et_bg"
+            android:hint="Instagram account"
+            android:inputType="text"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/et_color"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/owner_number_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/create_store_et_bg"
+            android:hint="Owner number"
+            android:inputType="phone"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/et_color"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/contact_email_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/create_store_et_bg"
+            android:hint="Contact e-mail"
+            android:inputType="text"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/et_color"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/price_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/et_container"
+        app:layout_constraintRight_toRightOf="@id/et_container"
+        app:layout_constraintTop_toBottomOf="@id/et_container">
+
+        <LinearLayout
+            android:id="@+id/kwd_75"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/create_store_kwd_false_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/kwd_250"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/price_75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="75 KWD"
+                android:textColor="@color/primary"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/time_price75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="3 months"
+                android:textColor="@color/black"
+                android:textSize="11dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/kwd_250"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:background="@drawable/create_store_kwd_false_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/kwd_75"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/price_250"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="250 KWD"
+                android:textColor="@color/primary"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/time_price250"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:text="1 year"
+                android:textColor="@color/black"
+                android:textSize="11dp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/send_request"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/primary_btn_bg"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Send Request"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

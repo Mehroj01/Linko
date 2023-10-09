@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.neb.linko">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Linko">
+        <activity
+            android:name=".businessUi.boosts.BannerImgActivity"
+            android:exported="false" />
+        <activity
+            android:name=".businessUi.boosts.PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".businessUi.boosts.BoostsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".businessUi.storePromoCodes.PromoCodesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".businessUi.storeItems.StoreItemsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".businessUi.storePhotos.StorePhotosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".businessUi.storeDetails.LocationsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_locations"
+            android:theme="@style/Theme.Linko.NoActionBar" />
+        <activity
+            android:name=".businessUi.businessEditProfile.BusinessEditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".businessUi.storeDetails.AddLocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".businessUi.storeDetails.StoreDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".businessUi.analytics.AnalyticsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".businessUi.createNewStore.CreateYourStoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.search.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.filter.ShowFilterStoresActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.filter.FilterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.web.ReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.web.WebActivity"
+            android:theme="@style/Theme.Linko.NoActionBar" />
+        <activity
+            android:name=".ui.ratings.RatingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.editProfile.EditProfileActivity"
+            android:exported="false"
+            android:label="@string/title_activity_edit_profile"
+            android:theme="@style/Theme.Linko.NoActionBar" />
+        <activity
+            android:name=".ui.store.StoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.registerscreens.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.about.AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".ui.store.MapActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

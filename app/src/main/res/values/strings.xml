@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Linko</string>
+    <string name="splash_title">We’re better than ever!</string>
+    <string name="splash_update">Please update the app to the last version.</string>
+    <string name="update">Update</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="categories">Categories</string>
+    <string name="search_estore">Search for e-store</string>
+    <string name="about_txt">Our purpose \nUnlocking the power of food to enhance quality of life for everyone, today and for generations to come. That is our purpose.\n\nWe are the Good food, Good life company. We believe in the power of food to enhance lives. Good food nourishes and delights the senses. It helps children grow healthy, pets thrive, parents age gracefully and everyone live life to the fullest. Good food brings us together. Good food also respects our planet and protects resources for future generations.\n\nAt Nestlé, we constantly explore and push the boundaries of what is possible with foods, beverages, and nutritional health solutions to enhance quality of life and contribute to a healthier future. We focus our energy and resources where unlocking the power of food can make the greatest difference to the lives of people and pets, protect and enhance the environment, and generate significant value for our shareholders and stakeholders alike.\n\nOur brands We have more than 2000 brands ranging from global icons to local favorites, and are present in 187 countries worldwide.\n\nOur ambitions We have defined three overarching ambitions for 2030 which guide our work and support the UN Sustainable Development Goals.</string>
+    <string name="enter_phone">Enter your phone number</string>
+    <string name="enter_code">Enter the 6-digit code sent to you at</string>
+    <string name="not_received_code">I haven\'t received a code</string>
+    <string name="title_activity_edit_profile">EditProfileActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="google_maps_key">AIzaSyA2BGHRtcEB9tuQQeWFSk1RrxRKeEVHkhc</string>
+    <string name="create_store_success_text_en">Our little minions are now working to get your store to go live ASAP!</string>
+    <string name="create_store_success_text_ar">يعمل أتباعنا الصغار على تجهيز متجرك للبدأ في إطلاقه في أسرع وقت ممكن!</string>
+    <string name="create_store_dialog_en_str">With the a Linko subscription you get to manage your store information, contact details, track user interest and conversions and create promotions and so much more, all without leaving the app.</string>
+    <string name="create_store_dialog_ar_str">مع الاشتراك في لينكو ستتمكن من التحكم وإدارة معلومات متجرك، بيانات التواصل، متابعة زيارات العملاء وإنشاء عروض تسويقية والكثير من المميزات، دون الحاجة لمنصة ثانية!</string>
+    <string name="title_activity_locations">LocationsActivity</string>
+</resources>

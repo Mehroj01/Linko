@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.registerscreens.pin.PinFragment">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#8BFFFFFF"
+        android:indeterminateTint="@color/primary"
+        android:padding="140dp"
+        android:translationZ="100dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/topBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/linko"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_back_red"
+        app:layout_constraintBottom_toBottomOf="@id/topBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/topBar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/titleText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/enter_code"
+        android:textColor="@android:color/black"
+        android:textSize="26dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/phoneText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/primary"
+        android:textSize="26dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/phoneLayout"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneText">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etOne"
+            android:inputType="number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:hint="*"
+            android:maxLength="1"
+            android:textColor="@color/primary"
+            android:textColorHint="@color/av_gray"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etTwo"
+            android:inputType="number"
+            android:textColorHint="@color/av_gray"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:hint="*"
+            android:maxLength="1"
+            android:textColor="@color/primary"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etThree"
+            android:inputType="number"
+            android:layout_width="0dp"
+            android:textColorHint="@color/av_gray"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:hint="*"
+            android:maxLength="1"
+            android:textColor="@color/primary"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etFour"
+            android:inputType="number"
+            android:layout_width="0dp"
+            android:textColorHint="@color/av_gray"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:hint="*"
+            android:maxLength="1"
+            android:textColor="@color/primary"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etFive"
+            android:inputType="number"
+            android:layout_width="0dp"
+            android:textColorHint="@color/av_gray"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:hint="*"
+            android:maxLength="1"
+            android:textColor="@color/primary"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etSix"
+            android:inputType="number"
+            android:layout_width="0dp"
+            android:textColorHint="@color/av_gray"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:hint="*"
+            android:maxLength="1"
+            android:textColor="@color/primary"
+            android:textSize="18sp" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/skipBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/not_received_code"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

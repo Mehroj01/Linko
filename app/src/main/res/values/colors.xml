@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#EA3557</color>
+
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="yellow">#F9D74A</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="version_gray">#6A6A6A</color>
+    <color name="accent">#282B30</color>
+
+    <color name="photo_border">#E6E8EE</color>
+    <color name="title_gray">#9F9FA0</color>
+    <color name="analytics_gray">#F4F5FA</color>
+
+    <color name="av_gray">#8D8D8E</color>
+    <color name="search_text">#707070</color>
+
+    <color name="separator">#E6E6E7</color>
+    <color name="light_color">#EFEFEF</color>
+    <color name="btn_border">#A7A7AA</color>
+
+    <color name="search_bg">#F2F3F5</color>
+    <color name="et_color">#DFE4EB</color>
+    <color name="boost_black_item">#282B30</color>
+    <color name="boost_primary_item">#EA3557</color>
+
+</resources>
